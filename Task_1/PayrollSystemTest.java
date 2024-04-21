@@ -1,16 +1,21 @@
+// M. Muntazar
+// 470861
+// PayrollSystemTest
+
 package Task_1;
 
 public class PayrollSystemTest {
     public static void main(String[] args) {
         // create subclass objects
-        SalariedEmployee salariedEmployee = new SalariedEmployee("John", "Smith", "111-11-1111", new Date(1, 27, 2000),
-                800.00);
-        HourlyEmployee hourlyEmployee = new HourlyEmployee("Karen", "Price", "222-22-2222", new Date(2, 27, 2000),
-                16.75, 40);
-        CommissionEmployee commissionEmployee = new CommissionEmployee("Sue", "Jones", "333-33-3333",
-                new Date(3, 27, 2000), 10000, .06);
-        BasePlusCommissionEmployee basePlusCommissionEmployee = new BasePlusCommissionEmployee("Bob", "Lewis",
-                "444-44-4444", new Date(4, 27, 2000), 5000, .04, 300);
+        SalariedEmployee salariedEmployee = new SalariedEmployee("Alice", "Johnson", "555-55-5555", new Date(5, 12, 1998),
+                900.00);
+        HourlyEmployee hourlyEmployee = new HourlyEmployee("Ethan", "Garcia", "666-66-6666", new Date(6, 18, 1999),
+                18.50, 37);
+        CommissionEmployee commissionEmployee = new CommissionEmployee("Emily", "Wang", "777-77-7777",
+                new Date(7, 7, 1997), 12000, .05);
+        BasePlusCommissionEmployee basePlusCommissionEmployee = new BasePlusCommissionEmployee("Michael", "Martinez",
+                "888-88-8888", new Date(8, 24, 1996), 6000, .03, 250);
+
 
         // create four-element Employee array
         Employee[] employees = new Employee[4];

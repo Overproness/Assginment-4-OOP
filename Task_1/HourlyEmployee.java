@@ -1,3 +1,7 @@
+// M. Muntazar
+// 470861
+//HourlyEmployee
+
 package Task_1;
 
 public class HourlyEmployee extends Employee {

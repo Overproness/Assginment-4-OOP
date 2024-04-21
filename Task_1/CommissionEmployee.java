@@ -1,5 +1,6 @@
-// Fig. 10.7: CommissionEmployee.java
-// CommissionEmployee class extends Employee.
+// M. Muntazar
+// 470861
+// CommissionEmployee
 
 package Task_1;
 

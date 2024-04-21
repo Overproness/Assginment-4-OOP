@@ -1,3 +1,7 @@
+// M. Muntazar
+// 470861
+// Employee
+
 package Task_1;
 
 public abstract class Employee {
