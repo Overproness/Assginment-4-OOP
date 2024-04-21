@@ -1,16 +1,15 @@
-package Task_1;
+package Task_2;
 
 public class HourlyEmployee extends Employee {
     private double wage; // wage per hour
     private double hours; // hours worked for week
 
     // constructor
-    public HourlyEmployee(String firstName, String lastName, String socialSecurityNumber, Date birthDate, double wage,
-                          double hours) {
-        super(firstName, lastName, socialSecurityNumber, birthDate);
+    public HourlyEmployee(String firstName, String lastName, String socialSecurityNumber, double wage, double hours) {
+        super(firstName, lastName, socialSecurityNumber);
 
         if (wage < 0.0) { // validate wage
-            throw new IllegalArgumentException("Hourly wage must be >= 0.0");
+            throw new IllegalArgumentException("Piece wage must be >= 0.0");
         }
 
         if ((hours < 0.0) || (hours > 168.0)) { // validate hours

@@ -1,12 +1,11 @@
-package Task_1;
+package Task_2;
 
 public class SalariedEmployee extends Employee {
     private double weeklySalary;
 
     // constructor
-    public SalariedEmployee(String firstName, String lastName, String socialSecurityNumber, Date birthDate,
-                            double weeklySalary) {
-        super(firstName, lastName, socialSecurityNumber, birthDate);
+    public SalariedEmployee(String firstName, String lastName, String socialSecurityNumber, double weeklySalary) {
+        super(firstName, lastName, socialSecurityNumber);
 
         if (weeklySalary < 0.0) {
             throw new IllegalArgumentException("Weekly salary must be >= 0.0");

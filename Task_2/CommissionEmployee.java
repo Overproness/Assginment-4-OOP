@@ -1,16 +1,13 @@
-// Fig. 10.7: CommissionEmployee.java
-// CommissionEmployee class extends Employee.
-
-package Task_1;
+package Task_2;
 
 public class CommissionEmployee extends Employee {
     private double grossSales;
     private double commissionRate;
 
-    // constructor
-    public CommissionEmployee(String firstName, String lastName, String socialSecurityNumber, Date birthDate,
-                              double grossSales, double commissionRate) {
-        super(firstName, lastName, socialSecurityNumber, birthDate);
+
+    public CommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSales,
+                              double commissionRate) {
+        super(firstName, lastName, socialSecurityNumber);
 
         if (commissionRate <= 0.0 || commissionRate >= 1.0) { // validate
             throw new IllegalArgumentException("Commission rate must be > 0.0 and < 1.0");
@@ -23,6 +20,7 @@ public class CommissionEmployee extends Employee {
         this.grossSales = grossSales;
         this.commissionRate = commissionRate;
     }
+
     public void setGrossSales(double grossSales) {
         if (grossSales < 0.0) { // validate
             throw new IllegalArgumentException("Gross sales must be >= 0.0");
@@ -58,4 +56,3 @@ public class CommissionEmployee extends Employee {
                 getGrossSales(), "commission rate", getCommissionRate());
     }
 }
-

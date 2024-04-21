@@ -1,14 +1,11 @@
-
-
-package Task_1;
+package Task_2;
 
 public class BasePlusCommissionEmployee extends CommissionEmployee {
-    private double baseSalary; // base salary per week
+    private double baseSalary;
 
-    // constructor
-    public BasePlusCommissionEmployee(String firstName, String lastName, String socialSecurityNumber, Date birthDate,
-                                      double grossSales, double commissionRate, double baseSalary) {
-        super(firstName, lastName, socialSecurityNumber, birthDate, grossSales, commissionRate);
+    public BasePlusCommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSales,
+                                      double commissionRate, double baseSalary) {
+        super(firstName, lastName, socialSecurityNumber, grossSales, commissionRate);
 
         if (baseSalary < 0.0) { // validate baseSalary
             throw new IllegalArgumentException("Base salary must be >= 0.0");
@@ -25,17 +22,14 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
         this.baseSalary = baseSalary;
     }
 
-
     public double getBaseSalary() {
         return baseSalary;
     }
-
 
     @Override
     public double earnings() {
         return getBaseSalary() + super.earnings();
     }
-
 
     @Override
     public String toString() {
