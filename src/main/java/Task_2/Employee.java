@@ -1,3 +1,7 @@
+// M. Muntazar
+// 470861
+// Employee
+
 package Task_2;
 
 public abstract class Employee {
@@ -12,28 +16,23 @@ public abstract class Employee {
         this.socialSecurityNumber = socialSecurityNumber;
     }
 
-    // return first name
     public String getFirstName() {
         return firstName;
     }
 
-    // return last name
     public String getLastName() {
         return lastName;
     }
 
-    // return social security number
     public String getSocialSecurityNumber() {
         return socialSecurityNumber;
     }
 
-    // return String representation of Employee object
     @Override
     public String toString() {
-        return String.format("%s %s%nsocial security number: %s", getFirstName(), getLastName(),
+        return String.format("%s %s%nSocial security number: %s", getFirstName(), getLastName(),
                 getSocialSecurityNumber());
     }
 
-    // abstract method must be overridden by concrete subclasses
-    public abstract double earnings(); // no implementation here
+    public abstract double earnings();
 }
