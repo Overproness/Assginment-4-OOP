@@ -1,3 +1,7 @@
+// M. Muntazar
+// 470861
+// CommissionEmployee
+
 package Task_2;
 
 public class CommissionEmployee extends Employee {
@@ -9,11 +13,11 @@ public class CommissionEmployee extends Employee {
                               double commissionRate) {
         super(firstName, lastName, socialSecurityNumber);
 
-        if (commissionRate <= 0.0 || commissionRate >= 1.0) { // validate
+        if (commissionRate <= 0.0 || commissionRate >= 1.0) {
             throw new IllegalArgumentException("Commission rate must be > 0.0 and < 1.0");
         }
 
-        if (grossSales < 0.0) { // validate
+        if (grossSales < 0.0) {
             throw new IllegalArgumentException("Gross sales must be >= 0.0");
         }
 
@@ -22,7 +26,7 @@ public class CommissionEmployee extends Employee {
     }
 
     public void setGrossSales(double grossSales) {
-        if (grossSales < 0.0) { // validate
+        if (grossSales < 0.0) {
             throw new IllegalArgumentException("Gross sales must be >= 0.0");
         }
 
@@ -34,7 +38,7 @@ public class CommissionEmployee extends Employee {
     }
 
     public void setCommissionRate(double commissionRate) {
-        if (commissionRate <= 0.0 || commissionRate >= 1.0) { // validate
+        if (commissionRate <= 0.0 || commissionRate >= 1.0) {
             throw new IllegalArgumentException("Commission rate must be > 0.0 and < 1.0");
         }
 

@@ -1,3 +1,7 @@
+// M. Muntazar
+// 470861
+// BasePlusCommissionEmployee
+
 package Task_2;
 
 public class BasePlusCommissionEmployee extends CommissionEmployee {
@@ -7,7 +11,7 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
                                       double commissionRate, double baseSalary) {
         super(firstName, lastName, socialSecurityNumber, grossSales, commissionRate);
 
-        if (baseSalary < 0.0) { // validate baseSalary
+        if (baseSalary < 0.0) {
             throw new IllegalArgumentException("Base salary must be >= 0.0");
         }
 
@@ -15,7 +19,7 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
     }
 
     public void setBaseSalary(double baseSalary) {
-        if (baseSalary < 0.0) { // validate baseSalary
+        if (baseSalary < 0.0) {
             throw new IllegalArgumentException("Base salary must be >= 0.0");
         }
 
